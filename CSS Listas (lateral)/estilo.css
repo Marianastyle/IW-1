@@ -1,0 +1,55 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {font-family:'Segoe UI ', Tahoma, Geneva, Verdana, Sans-serif;}
+nav {
+    background: #BA0000;
+    padding: 10px;
+    position:fixed;
+    top:0;
+    left:0;
+
+    /*menu lateral*/
+    width:300px; /* largura fixa para menu lateral*/
+    height:100vh; /* faz menu ocupar 100% da altura da janela*/
+    overflow-y: auto; /*adiciona barra de rolagem vertical caso o conteudo ultrapasse a altura*/
+    z-index: 1000; /*garante que o menu fique sobre outros elementos da pagina*/
+}
+nav ul {list-style:none;}
+
+ /*menu lateral*/
+nav ul li {float:none;} /*remove o float (que fazia os itens ficarem lado a lado*/
+
+
+nav ul li a {display:block;
+    /*menu lateral*/    
+    padding:10px 20px; /*espaçamento interno para area clicavel e estética*/
+
+    font-size:15px; text-decoration:none; color: white;}
+
+nav ul li a:hover{background-color:white; color:black;}
+
+
+nav ul li ul {background-color:#BA0000;
+display:none;
+
+/*menu lateral*/
+position: static; /*posiciona osubmenu para o fluxo normal da pagina*/
+padding-left:20px;} /*identa o submenu para mostrar hierarquia*/
+
+nav ul li:hover ul {display:block;}
+
+nav ul li ul li {width:300px;
+border-bottom: 1px solid white;}
+
+/*menu lateral*/
+nav ul li ul li a {padding: 8px 20px;} /*espaçamento interno menor do que o principal*/
+
+nav ul li ul li a:hover { background-color:white;
+color:black;}
+
+/*menu lateral*/
+.content {margin-left:300px; /*cria espaço á esquerda igual a largura do menu*/
+padding:20px;}

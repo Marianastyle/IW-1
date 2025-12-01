@@ -35,6 +35,15 @@ nav {
     text-align: center;
 }
 
+.menu-lateral {
+    width: 250px;
+    height: 100vh;
+    color: white;
+    background-image:linear-gradient(to right,rgb(#FF789C , #FEBED4) );
+    padding-top: 20px;
+    box-shadow: 3px 0 5px rgb(228, 146, 173);
+}
+
 nav a{
     display: inline-block;
     padding: 8px 20px ;
@@ -108,12 +117,12 @@ h2 {
     margin-bottom: 20px;
 }
 .card h3 {
-    color:beige;
+    color:white;
     margin-bottom: 8px;
 }
 
 .card p {
-    color: beige;
+    color: white;
     margin-bottom: 8px;
 }
 
@@ -121,7 +130,7 @@ h2 {
     display:inline-block;
     text-decoration: none;
     background-color: aqua;
-    color:white;
+    color:palevioletred;
     padding: 8px 15px;
     border-radius:10px ;
     font-weight: bold;
@@ -129,7 +138,8 @@ h2 {
 }
 
 .card a:hover {
-    background-color: aquamarine;
+    background-color:rgb(255, 124, 146);
+    color: white;
     transform: scale(1.05);
 }
 
@@ -151,11 +161,57 @@ h2 {
     transition: background-color 0.3 ease;
 }
 
+/*animação botoes*/
+.botao-link:hover {
+    color:white;
+    background-color:rgb(255, 124, 146);
+}
 
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: baseline;
+}
 
+.coluna {
+    flex: 1;
+    display: block;
+}
 
+/*rodapé*/
+footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 30px;
+    color: white;
+    background-color:rgb(255, 124, 146);
+}
 
+/*voltar para topo*/
 
+.back-to-top {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 160px;
+    text-decoration: none;
+    background-color:rgb(126, 241, 241);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    animation: pulando 1.2 ease-in-out infinitive;
+}
+
+/*animação do botão*/
+.back-to-top:hover {
+    background-color:rgb(255, 124, 146);
+    transform: scale(1.2);
+}
 
 </style>
 </head>
@@ -163,7 +219,7 @@ h2 {
 <body>
     <!--barra de navegação-->
     <header>
-        <nav>
+        <nav class="menu-lateral">
           <div class="menu" >
             <a href="Introducao">Introdução</a>
             <a href="Historia">História</a>
@@ -172,7 +228,8 @@ h2 {
             <a href="Beneficios">Benefícios</a>
             <a href="Origaminasdatascomemorativas">Origami nas datas comemorativas</a>
           </div> 
-        </nav>
+          </nav>
+        
     </header>
 
     <main class="menu">
@@ -205,32 +262,40 @@ h2 {
         <section id="Principaisdobraduras">
             <!--card Tsuru-->
         <h1>Principais dobraduras</h1>
+    <div class="container">
         <div class="card">
         <h1>Tsuru</h1>
         <p>Tsuru é considerada uma ave sagrada do Japão. Simboliza saúde, sorte, felicidade, longevidade e fortuna, sendo assim um símbolo para grandes benefícios.</p>
         <a href="https://www.youtube.com/watch?v=qvYGbBoAn6M" class="botao-link">Tutorial de como fazer o origami</a>
         </div>
+        </div>
 
             <!--card Sapo-->
+    <div class="container">
         <div class="card">
         <h1>Sapo</h1>
         <p>Esse animal tem como simbologia a vontade de que coisas positivas voltem a acontecer. Por isso, ele é oferecido a pessoas doentes, como um desejo de melhora da saúde.</p>
         <a href="https://www.youtube.com/watch?v=OvTisVz4lTQ" class="botao-link">Tutorial de como fazer o origami</a>
         </div>
+        </div>
 
            <!--card Borboleta-->
+    <div class="container">
         <div class="card">
         <h1>Borboleta</h1>
         <p>O origami de borboleta é feito utilizando papel quadrado, primeiramente começando por dobras diagonais e horizontais para formar a borboleta. </p>
         <a href="https://www.youtube.com/watch?v=rlXH3_R_QO8" class="botao-link">Tutorial de como fazer o origami</a>
         </div>
+        </div>
 
           <!--card flor-->
+    <div class="container">
         <div class="card">
         <h1>Flor (Iris)</h1>
         <p>Essa flor carrega como simbologia a sabedoria e, na cultura japonesa, é um belo presente de aniversário.
         Dessa forma, a dobradura de iris traz também todo esse significado e presentar alguém com ela significa votos de saúde e sabedoria.</p>
         <a href="https://www.youtube.com/watch?v=Yw1bpMdyTrs" class="botao-link">Tutorial de como fazer o origami</a>
+        </div>
         </div>
         </section>
 
@@ -304,7 +369,11 @@ h2 {
             </div>
         </section>
     </div>
+    <footer>
+        Hobby Origami
+    </footer>
 
+    <a href="#Introducao" class="back-to-top">Voltar ao topo</a>
     </main>
 </body>
 </html>

@@ -48,6 +48,8 @@ nav a{
 
 
 .menu {
+    top:0;
+    position: fixed;
     background: linear-gradient(90deg,#FF789C 0%, #FEBED4 100%)  ;
     margin-right: 20px;
     color: white;
@@ -64,6 +66,11 @@ nav a{
 .item {
     color:white;
     text-decoration: none;
+}
+
+.apenas-img {
+    width: 700px;
+    height: auto;
 }
 
 /*quando passar o mouse*/
@@ -160,6 +167,34 @@ h2 {
     padding: 100px 20px 20px;
   
 }
+.tabela td.linha-completa {
+   
+    background-color:rgb(255, 124, 146) ;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.tabela td {
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+.tabela {
+    width: 700px;
+    border-collapse: collapse;
+    background-color:#ffa6c5 ;
+}
+
+
+
+
+
+
 .botao-link {
     display: inline-block;
     padding: 10 20px;
@@ -256,7 +291,7 @@ h2 {
         <h2>Meu nome é Mariana e este site é dedicado a descrever um dos meus hobbies o Origami.
          O origami originou-se no Japão, ori (significa "dobrar" e kami que significa "papel")  é a arte de dobradura no papel.</h2>
         <br>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cranes_made_by_Origami_paper.jpg/1200px-Cranes_made_by_Origami_paper.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cranes_made_by_Origami_paper.jpg/1200px-Cranes_made_by_Origami_paper.jpg" class="apenas-img">
       </section> 
       
       <!-- Seção História-->
@@ -265,10 +300,12 @@ h2 {
     <div class="grid">
         <div class="card">
         <h1>História</h1>
+        <br>
         <p>Os japoneses passaram a praticar o origami e a desenvolvê-lo, tanto que, no século seguinte, passam a incluí-lo como elemento de rituais xintoístas.
            Nessa época, havia algumas regras para a criação de origamis. Os papéis não podiam ser colados ou recortados, pois os xintoístas entendiam que somente mantendo-os inteiros poderiam homenagear e honrar as forças divinas das árvores que os originaram.
            Posteriormente, surgiram outros métodos menos rígidos, que permitiam o recorte e a colagem das dobraduras. É o caso do kirigami e o kirikomiorigami, em que pode-se juntar outras folhas de papel e fazer uso de cola.
            Hoje em dia, o origami é muito comum entre as crianças, pois em 1876, as escolas japonesas incluíram a técnica como forma de aprendizagem.</p>
+           <br>
            <a href="https://brasilescola.uol.com.br/artes/origami.htm" class="botao-link">Conheça mais a história do Origami</a>
         </div>
       </section>
@@ -277,8 +314,6 @@ h2 {
         <section id="Principaisdobraduras">
             <!--card Tsuru-->
         <h1>Principais dobraduras</h1>
-        <br>
-        <br>
         
     <div class="container">
         <div class="card">
@@ -328,14 +363,27 @@ h2 {
         <!--Seção dicas para iniciantes-->
         <section>
             <h1>Dicas para iniciantes</h1>
-            <ul>
-                <li>Vinque bem </li>
-                <li>Começe com modelos fáceis</li>
-                <li>Faça devagar</li>
-                <li>Utilize papel de boa qualidade</li>
-                <li>Trabalhe em uma superfície plana</li>
-                <li>Aprenda as dobras básicas</li>
-            </ul>
+            <br>
+            <table class="tabela">
+                <tr>
+                    <td colspan="2" class="linha-completa">Dicas importantes</td>
+                </tr>
+
+                <tr>
+                    <td>Vinque bem</td>
+                    <td>Começe com modelos fáceis</td>
+                </tr>
+
+                <tr>
+                    <td>Faça devagar</td>
+                    <td>Utilize papel de boa qualidade</td>
+                </tr>
+
+                <tr>
+                    <td>Trabalhe em uma superfície plana</td>
+                    <td>Aprenda as dobras básicas</td>
+                </tr>
+            </table>
         </section>
 
         <!--Seção beneficios-->
@@ -367,7 +415,7 @@ h2 {
                 <h1>Páscoa: Origami de coelho</h1>
                 <br>
                 <img src="https://i.ytimg.com/vi/QAXcQ6mZefQ/hqdefault.jpg">
-                <a href="https://www.youtube.com/watch?v=QAXcQ6mZefQ" class="botao-link">Veja como fazer</a>
+                <a href="https://www.youtube.com/watch?v=QAXcQ6mZefQ" class="botao-link">Veja como fazer este origami</a>
             </div>
             <br>
             <br>
@@ -377,7 +425,7 @@ h2 {
                 <h1>Dia das mães : Coração de origami</h1>
                 <br>
                 <img src="https://i.ytimg.com/vi/IIr8l4l0kN4/maxresdefault.jpg">
-                <a href="https://www.youtube.com/watch?v=IIr8l4l0kN4"class="botao-link">Veja como fazer</a>
+                <a href="https://www.youtube.com/watch?v=IIr8l4l0kN4"class="botao-link">Veja como fazer este origami</a>
             </div>
             <br>
             <br>
@@ -387,7 +435,7 @@ h2 {
                 <h1>Natal: Árvore de natal</h1>
                 <br>
                 <img src="https://i.ytimg.com/vi/kP6OrUjeobw/maxresdefault.jpg">
-                <a href="https://www.youtube.com/watch?v=kP6OrUjeobw" class="botao-link">Veja como fazer</a>
+                <a href="https://www.youtube.com/watch?v=kP6OrUjeobw" class="botao-link">Veja como fazer este origami</a>
             </div>
             <br>
             <br>
@@ -397,7 +445,7 @@ h2 {
                 <h1>Festa junina: Balão</h1>
                 <br>
                 <img src="https://i.ytimg.com/vi/Mm8VXmQAYRw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBoj4F_D6rqE4O0cahEtwj4xpN78A">
-                <a href="https://www.youtube.com/watch?v=Mm8VXmQAYRw" class="botao-link">Veja como fazer</a>
+                <a href="https://www.youtube.com/watch?v=Mm8VXmQAYRw" class="botao-link">Veja como fazer este origami</a>
             </div>
             <br>
             <br>
@@ -407,15 +455,16 @@ h2 {
             <h1>Halloween: Abóbora</h1>
             <br>
             <img src="https://i.ytimg.com/vi/-Ye3hf4QrJU/maxresdefault.jpg">
-            <a href="https://www.youtube.com/watch?v=-Ye3hf4QrJU" class="botao-link">Veja como fazer</a>
+            <a href="https://www.youtube.com/watch?v=-Ye3hf4QrJU" class="botao-link">Veja como fazer este origami</a>
             </div>
         </section>
     </div>
+    </main>
     <footer class="footer">
         Hobby Origami
     </footer>
 
     <a href="#Introducao" class="back-to-top">Voltar ao topo</a>
-    </main>
+   
 </body>
 </html>

@@ -119,6 +119,9 @@ h2 {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
+    margin: 0 auto;
+   
+ 
 }
 
 .card:hover {
@@ -132,7 +135,7 @@ h2 {
     object-fit: cover;
     margin-bottom: 20px;
 }
-.card h3 {
+.card h2 {
     color:white;
     margin-bottom: 8px;
 }
@@ -140,6 +143,12 @@ h2 {
 .card p {
     color: white;
     margin-bottom: 8px;
+}
+
+.card-pequeno {
+    width: 700px;
+    height: 357px;
+    padding: 20px;
 }
 
 .card a {
@@ -161,10 +170,11 @@ h2 {
 
 .container {
     display: flex;
-    gap: 30px;
-    flex-wrap:wrap;
+    gap: 20px;
     justify-content: center;
     padding: 100px 20px 20px;
+    flex-wrap: wrap;
+   
   
 }
 .tabela td.linha-completa {
@@ -185,19 +195,34 @@ h2 {
     text-align: left;
 }
 .tabela {
-    width: 700px;
+    width: 810px;
+    height: 210px;
+    margin: 0 auto;
     border-collapse: collapse;
     background-color:#ffa6c5 ;
 }
+ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0 auto;
+    width: max-content;
 
+}
 
+ul li{
+    text-align: left;}
 
-
-
+.lista-beneficios {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .botao-link {
     display: inline-block;
     padding: 10 20px;
+    background-color:rgb(140, 240, 240);
     width: 270px;
     height: 60px;
     color:black;
@@ -209,15 +234,14 @@ h2 {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    transition: background-color 0.3 ease;
+    transition: background-color 0.3s;
 }
 
-/*animação botoes*/
+/*animação botoes quando passar mouse*/
 .botao-link:hover {
     color:white;
     background-color:rgb(255, 124, 146);
 }
-
 
 
 .coluna {
@@ -298,7 +322,7 @@ h2 {
       <section id="Historia">
         <br>
     <div class="grid">
-        <div class="card">
+        <div class="card card-pequeno">
         <h1>História</h1>
         <br>
         <p>Os japoneses passaram a praticar o origami e a desenvolvê-lo, tanto que, no século seguinte, passam a incluí-lo como elemento de rituais xintoístas.
@@ -389,12 +413,18 @@ h2 {
         <!--Seção beneficios-->
         <section>
             <h1>Benefícios</h1>
-            <ul>
+            <br>
+            <ul class="lista-beneficios">
                 <li>Aumenta a concentração</li>
+                <br>
                 <li>Desenvolve a criatividade</li>
+                <br>
                 <li>Melhora a memória</li>
+                <br>
                 <li>Reduz o estresse</li>
+                <br>
                 <li>Reduz a ansiedade</li>
+                <br>
                 <li>Fortalece a autoestima</li>
             </ul>
         </section>
@@ -405,6 +435,7 @@ h2 {
             <h1>Origami nas datas comemorativas</h1>
             <br>
             <h2>O dia mundial do origami é 11 de novembro</h2>
+            <br>
             <p>Aqui temos alguns exemplos de origamis para fazer em datas comemorativas durante o ano.</p>
             <br>
             <br>
